@@ -1,0 +1,72 @@
+/*************************************
+**************************************
+These are the styles for
+the tabs section
+**************************************
+**************************************/
+
+.block_tabs{
+  @include clearfix();
+  .nav-tabs{
+    float: left;
+    width:285px;
+    border-bottom: 0;
+    > li{
+      margin: 0 -1px 4px 0;
+      float: none;
+      > a{
+        @include border-radius(4px 0 0 4px);
+        text-align: center;
+        border:1px solid transparent;
+        margin-right: 0;
+        font-size: 15px;
+        &:hover,&:focus{
+          background-color: #fff;
+        }
+        @media (max-width: 590px) {
+          @include border-radius(4px 4px 0 0 );
+        }
+      }
+      @media (max-width: 590px) {
+        display: none;
+      }
+      &.dropdown{
+        float: right;
+        display: none;
+        margin: 0;
+        > a{
+          border:1px solid #ddd !important;
+          border-bottom: 0 !important;
+          background-color: #fff;
+          display: inline-block;
+        }
+        .dropdown-menu{
+          right: 0;
+          left: auto;
+        }
+        @media (max-width: 590px) {
+          display: block;
+        }
+      }
+    }
+    @media (max-width: 590px) {
+      float: none;
+      width:auto;
+    }
+  }
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    border:1px solid #ddd;
+    border-right:1px solid transparent;
+    outline: 0;
+  }
+  .tab-content{
+    padding:12px 20px;
+    overflow: hidden;
+    border:1px solid #ddd;
+    background-color: #fff;
+    min-height: 400px;
+    @media (max-width: 590px) {
+      min-height: inherit;
+    }
+  }
+}

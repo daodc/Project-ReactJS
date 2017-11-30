@@ -1,0 +1,8 @@
+// Generating transition
+// Example: @include transition(all 0.2s ease-in-out);
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

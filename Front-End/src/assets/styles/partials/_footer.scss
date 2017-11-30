@@ -1,0 +1,25 @@
+/*************************************
+**************************************
+These are the styles for
+the footer section
+**************************************
+**************************************/
+
+#footer {
+  color: #fff;
+  font-size:14px;
+  min-height: 95px;
+  padding-top:25px;
+  margin-top: 300px;
+  text-align: center;
+  border-top:1px solid #fff;
+  p{
+  	margin-bottom: 6px;
+  }
+  a{
+  	color:#fff;
+  	&:hover,a:focus{
+  		text-decoration: underline;
+  	}
+  }
+}

@@ -1,0 +1,7 @@
+// Generating transition
+// Example: @include box_shadow(0 1px 1px rgba(0, 0, 0, 0.075););
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 2px, $color: #CCC) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}

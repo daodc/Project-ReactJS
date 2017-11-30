@@ -1,0 +1,62 @@
+/*!
+ * Layout genneral 
+ * Copyright Dang Cong Dao 2015.
+ * Licensed final
+ */
+
+/*----- @import all -----*/
+
+@import "bootstrap";
+@import "mixins";
+@import "core";
+@import "partials";
+@import "pages";
+@import "plugins";
+@import "reset-intervale";
+@import "font-awesome";
+
+/*----- animation image -----*/
+
+@-webkit-keyframes smooth-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes smooth-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*Media Query*/
+
+@media (min-width: $screen-lg-min) {}
+
+@media (min-width: $screen-md-min) {}
+
+@media (min-width: $screen-md-max) {}
+
+@media (min-width: $screen-sm-min) {}
+
+@media (max-width: $screen-sm-max) {}
+
+@media (max-width: $screen-xs-min) {}
+
+@media (max-width: $screen-xs-max) {}

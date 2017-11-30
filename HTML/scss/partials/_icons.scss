@@ -1,0 +1,52 @@
+/***************************
+****************************
+These are the styles for
+the icons section
+****************************
+***************************/
+
+@mixin size-icons($left, $top, $width, $height, $line-height) {
+  width: $width;
+  height: $height;
+  line-height: $line-height;
+  background-position: $left $top;
+}
+
+[class^="icons_"],
+[class*=" icons_"] {
+  display: inline-block;
+  *margin-right: .3em;
+  vertical-align: text-top;
+  background-image: url(#{$base-url}/sprite.png);
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+.icons_search,.icons_hand {
+  vertical-align: middle;
+}
+
+.icons_search {
+  @include size-icons(-138px, -157px, 19px, 19px, 19px);
+}
+.icons_hand {
+  @include size-icons(-167px, -157px, 15px, 12px, 12px);
+}
+.icons_nextpage,.icons_prevpage{
+  margin-top:1px;
+}
+.icons_nextpage {
+  @include size-icons(-295px, -157px, 14px, 16px, 16px);
+}
+.icons_prevpage {
+  @include size-icons(-271px, -157px, 14px, 16px, 16px);
+}
+.icons_rating_grey {
+  @include size-icons(-208px, -157px, 15px, 15px, 15px);
+}
+.icons_rating_yellow {
+  @include size-icons(-232px, -157px, 15px, 15px, 15px);
+}
+.icons_circle {
+  @include size-icons(-256px, -157px, 5px, 5px, 5px);
+}

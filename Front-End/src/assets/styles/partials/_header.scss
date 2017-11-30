@@ -1,0 +1,274 @@
+/*************************************
+**************************************
+These are the styles for
+the header section
+**************************************
+**************************************/
+
+#header,
+#header .container,
+#header .col-xs-6 {
+  height: 207px;
+  @media (max-width: $screen-xs-max) {
+    height:auto;
+  }
+}
+#header .col-xs-6{
+  @media (max-width: 390px) {
+    width: 100%;
+  }
+}
+#header {
+  color: #fff;
+  .mix_sun{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 568px;
+    height: 426px;
+    background:url(#{$base-url}/bg_sun.png) no-repeat scroll;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+  .container,
+  .col-sm-6 {
+    position: relative;
+  }
+  h1 {
+    float: left;
+    margin: 21px 0 0 68px;
+    @media (max-width: $screen-xs-max) {
+      margin-left: 5px;
+    }
+    @media (max-width: 390px) {
+      margin:21px auto 0;
+      width: 161px;
+      float: none;
+    }
+  }
+  .airship_small,
+  .airship_large {
+    position: absolute;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+  .airship_small {
+    @include size(34px, 49px);
+    right: 24px;
+    bottom: 17px;
+    -webkit-animation: move_airship_small 4s ease-in-out infinite;
+    -ms-animation:     move_airship_small 4s ease-in-out infinite;
+    animation:         move_airship_small 4s ease-in-out infinite;
+    background:url(#{$base-url}/sprite.png) no-repeat -94px -157px scroll;
+  }
+  .airship_large {
+    @include size(84px, 119px);
+    right: 58px;
+    bottom: 36px;
+    -webkit-animation: move_airship_large 4s ease-in-out infinite;
+    -ms-animation:     move_airship_large 4s ease-in-out infinite;
+    animation:         move_airship_large 4s ease-in-out infinite;
+    background:url(#{$base-url}/sprite.png) no-repeat 0 -157px scroll;
+  }
+  .top_search {
+    float: right;
+    position: relative;
+    z-index: 999;
+    margin: 100px 135px 0 0;
+    .form-group {
+      position: relative;
+      .btn_search {
+        right: 10px;
+        top: 6px;
+        padding: 0;
+        border: 0;
+        background: none;
+        position: absolute;
+      }
+    }
+    .form-group.drop_laguage{
+      @media (max-width: $screen-xs-max) {
+        float: right;
+      }
+    }
+    input.form-control,.btn-default {
+      border: 3px solid #77c6ea;
+    }
+    .btn-default {
+      padding:4px 12px;
+    }
+    .input_search {
+      width: 272px;
+      padding-right: 35px;
+      @media (max-width: 890px) {
+        width: 200px;
+      }
+    }
+    .select_search {
+      width: 115px;
+    }
+    @media (max-width: 1090px) {
+      margin-right: 0;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin:21px 0 0;
+    }
+    @media (max-width: 390px) {
+      display: none;
+    }
+  }
+  .cloud_one,.cloud_two{
+    position: absolute;
+    z-index: 0;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+  .cloud_one {
+    top:27px;
+    right:220px;
+    @include size(249px, 117px);
+    background:url(#{$base-url}/cloude_1.png) no-repeat scroll;
+    animation: delayFadeIn 4s linear 2s infinite;
+    -moz-animation: delayFadeIn 4s linear 2s infinite;
+    -webkit-animation: delayFadeIn 4s linear 2s infinite;
+  }
+  .cloud_two {
+    top:127px;
+    right:-80px;
+    @include size(306px, 112px);
+    background:url(#{$base-url}/cloude_2.png) no-repeat scroll;
+    animation: delayFadeIn 6s linear 4s infinite;
+    -moz-animation: delayFadeIn 6s linear 4s infinite;
+    -webkit-animation: delayFadeIn 6s linear 4s infinite;
+    @media (max-width: 1150px) {
+      right:0;
+    }
+  }
+}
+
+.plane {
+  top: 35px;
+  left: 269px;
+  position: absolute;
+  @include size(388px, 147px);
+  background:url(#{$base-url}/sprite.png) no-repeat scroll;
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+#menu {
+  font-size: 14px;
+  font-family: 'open_sansbold';
+  .collapse{
+    padding:0;
+  }
+  .navbar{
+    @include border-radius(4px 4px 0 0);
+    border:0;
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(4px);
+    }
+  }
+  .navbar-toggle{
+    @media (max-width: $screen-xs-max) {
+      margin-right:9px;
+    }
+  }
+  .navbar .navbar-nav{
+    @media (max-width: $screen-xs-max) {
+      margin:0;
+    }
+  }
+  .navbar-nav {
+    float: none;
+    @include clearfix();
+    background-color: #006fc4;
+  }
+  .navbar-nav > li {
+    width: 16.66%;
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+      width: auto;
+    }
+  }
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus{
+    background: #003463;
+  }
+  .navbar-default .navbar-nav > li > a{
+    @media (max-width: 890px) {
+      padding-left:5px;
+      padding-right:5px;
+      font-size: 12px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    margin:20px 0 0;
+  }
+}
+/*keyframes*/
+@-webkit-keyframes move_airship_small{
+  0%{bottom:17px;}
+  50%{bottom:50px;}
+  100%{bottom:17px;}
+}
+@-moz-keyframes move_airship_small{
+  0%{bottom:17px;}
+  50%{bottom:50px;}
+  100%{bottom:17px;}
+}
+@keyframes move_airship_small{
+  0%{bottom:36px;}
+  50%{bottom:50px;}
+  100%{bottom:36px;}
+}
+
+@-webkit-keyframes move_airship_large{
+  0%{bottom:36px;}
+  50%{bottom:70px;}
+  100%{bottom:36px;}
+}
+@-moz-keyframes move_airship_large{
+  0%{bottom:36px;}
+  50%{bottom:70px;}
+  100%{bottom:36px;}
+}
+@keyframes move_airship_large{
+  0%{bottom:36px;}
+  50%{bottom:70px;}
+  100%{bottom:36px;}
+}
+
+@-webkit-keyframes delayFadeIn {
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity:0.5;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes delayFadeIn {
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity:0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes delayFadeIn {
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity:0.5;}
+  100% {opacity: 1;}
+}

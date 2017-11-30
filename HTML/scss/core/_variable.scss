@@ -1,0 +1,88 @@
+//** Background color for `<body>`.
+$body-bg: #fff !default;
+
+/**********************************
+  FONT
+**********************************/
+
+$font-size-base: 14px !default;
+$font-family-sans-serif: "Helvetica Neue",Helvetica,Arial,sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429 !default; // 20/14
+$font-stack:"open_sansregular";
+
+/**********************************
+  COLOR
+**********************************/
+
+//## Gray and brand colors for use across Bootstrap.
+$gray-base: #000 !default;
+$gray-light: lighten($gray-base, 46.7%) !default; // #777
+// Application Color
+$color-primary: #000000;
+$color-accent: #000000;
+$color-disabled: #000000;
+$color-a: #000000;
+$color-b: #000000;
+$color-c: #000000;
+$color-d: #000000;
+$color-e: #000000;
+$color-f: #000000;
+$color-g: #000000;
+$color-h: #000000;
+$color-i: #000000;
+$color-j: #000000;
+$color-k: #000000;
+$color-l: #000000;
+$color-m: #000000;
+$color-n: #000000;
+
+/**********************************
+  SPACE SIZE
+**********************************/
+
+$space-base: 4px;
+$space-a: $space-base * 1;
+$space-b: $space-base * 2;
+$space-c: $space-base * 3;
+$space-d: $space-base * 4;
+$space-e: $space-base * 5;
+$space-f: $space-base * 6;
+$space-g: $space-base * 7;
+$space-h: $space-base * 8;
+$space-i: $space-base * 9;
+$space-j: $space-base * 10;
+$space-k: $space-base * 11;
+$space-l: $space-base * 12;
+$space-m: $space-base * 13;
+$space-n: $space-base * 14;
+$space-o: $space-base * 15;
+$space-p: $space-base * 16;
+$space-q: $space-base * 17;
+$space-r: $space-base * 18;
+$space-s: $space-base * 19;
+$space-t: $space-base * 20;
+
+/**********************************
+  RADIUS SIZE
+**********************************/
+
+$radius-size-base: 4px;
+$radius-size-a: $radius-size-base * 1;
+$radius-size-b: $radius-size-base * 2;
+$radius-size-c: $radius-size-base * 3;
+$radius-size-d: $radius-size-base * 4;
+$border-radius-base: 4px !default;
+$border-radius-large: 6px !default;
+$border-radius-small: 3px !default;
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base: $border-radius-base !default;
+
+/*----- color -----*/
+
+$base-color: #222;
+$link-color: #428bca;
+$link-color-hover: #f00;
+$base-font: 13px;
+$base-url: "../images/front";
